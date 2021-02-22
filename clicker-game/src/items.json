@@ -2,62 +2,61 @@
     {
         "id": 1,
         "name": "Annie",
-        "image": "public/assets/images/annie.PNG"
-        
+        "image": "/images/annie.PNG"
     },
     {
         "id": 2,
         "name": "Armin",
-        "image": "public/assets/images/armin.PNG"
+        "image": "/images/armin.PNG"
     },
     {
         "id": 3,
         "name": "Bertholdt",
-        "image": "public/assets/images/bertholdt.PNG"
+        "image": "images/bertholdt.PNG"
     },
     {
         "id": 4,
         "name": "Christa",
-        "image": "public/assets/images/christa.PNG"
+        "image": "images/christa.PNG"
     },
     {
         "id": 5,
         "name": "Conny",
-        "image": "public/assets/images/conny.PNG"
+        "image": "images/conny.PNG"
     },
     {
         "id": 6,
         "name": "Eren",
-        "image": "public/assets/images/eren.PNG"
+        "image": "images/eren.PNG"
     },
     {
         "id": 7,
         "name": "Levi",
-        "image": "public/assets/images/levi.PNG"
+        "image": "images/levi.PNG"
     },
     {
         "id": 8,
         "name": "Mikasa",
-        "image": "public/assets/images/mikasa.PNG"
+        "image": "images/mikasa.PNG"
     },
     {
         "id": 9,
         "name": "Reiner",
-        "image": "public/assets/images/reiner.PNG"
+        "image": "images/reiner.PNG"
     },
     {
         "id": 10,
         "name": "Sasha",
-        "image": "public/assets/images/sasha.PNG"
+        "image": "images/sasha.PNG"
     },
     {
         "id": 11,
         "name": "Titan",
-        "image": "public/assets/images/titan.PNG"
+        "image": "images/titan.PNG"
     },
     {
         "id": 12,
         "name": "Ymir",
-        "image": "public/assets/images/ymir.PNG"
+        "image": "images/ymir.PNG"
     }
 ]

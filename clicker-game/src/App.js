@@ -7,7 +7,9 @@ import items from "./items.json";
 
 class App extends Component {
   state = {
-    items: items
+    items: items,
+    score: 0,
+    topScore: 0
   }
 
   render() {
