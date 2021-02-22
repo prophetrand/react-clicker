@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Wrapper from "./components/Wrapper";
 import ItemCard from "./components/ItemCard";
 import Navbar from "./components/Navbar"
 import './App.css';
