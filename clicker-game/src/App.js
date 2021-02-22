@@ -14,9 +14,15 @@ class App extends Component {
     return (
       <div>
         <Navbar />
-        <Wrapper>
-
-        </Wrapper>
+        <main className="container">
+          {this.state.items.map(item => (
+            <ItemCard 
+              id={item.id}
+              key={item.id}
+              image={item.image}
+            />
+          ))}
+        </main>
       </div>
     )
   }
