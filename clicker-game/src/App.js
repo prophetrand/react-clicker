@@ -8,7 +8,18 @@ class App extends Component {
   state = {
     items: items,
     score: 0,
-    topScore: 0
+    topScore: 0,
+    clicked: []
+  }
+
+  shuffleChibi = () => {
+    const shuffled = this.state.items.sort(() => Math.random() - 0.1);
+    console.log(shuffled);
+    this.setState({ items: shuffled });
+  }
+
+  componentDidMount() {
+    this.shuffleChibi();
   }
 
   render() {
@@ -21,6 +32,8 @@ class App extends Component {
               id={item.id}
               key={item.id}
               image={item.image}
+              shuffleChibi={this.shuffleChibi}
+              selectChibi={this.selectChibi}
             />
           ))}
         </main>
