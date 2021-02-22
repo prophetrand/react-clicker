@@ -12,51 +12,51 @@
     {
         "id": 3,
         "name": "Bertholdt",
-        "image": "images/bertholdt.PNG"
+        "image": "/images/bertholdt.PNG"
     },
     {
         "id": 4,
         "name": "Christa",
-        "image": "images/christa.PNG"
+        "image": "/images/christa.PNG"
     },
     {
         "id": 5,
         "name": "Conny",
-        "image": "images/conny.PNG"
+        "image": "/images/conny.PNG"
     },
     {
         "id": 6,
         "name": "Eren",
-        "image": "images/eren.PNG"
+        "image": "/images/eren.PNG"
     },
     {
         "id": 7,
         "name": "Levi",
-        "image": "images/levi.PNG"
+        "image": "/images/levi.PNG"
     },
     {
         "id": 8,
         "name": "Mikasa",
-        "image": "images/mikasa.PNG"
+        "image": "/images/mikasa.PNG"
     },
     {
         "id": 9,
         "name": "Reiner",
-        "image": "images/reiner.PNG"
+        "image": "/images/reiner.PNG"
     },
     {
         "id": 10,
         "name": "Sasha",
-        "image": "images/sasha.PNG"
+        "image": "/images/sasha.PNG"
     },
     {
         "id": 11,
         "name": "Titan",
-        "image": "images/titan.PNG"
+        "image": "/images/titan.PNG"
     },
     {
         "id": 12,
         "name": "Ymir",
-        "image": "images/ymir.PNG"
+        "image": "/images/ymir.PNG"
     }
 ]
