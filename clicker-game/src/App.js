@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar score={this.state.score} topScore={this.state.topScore} />
         <main className="container">
           {this.state.items.map(item => (
             <ItemCard 

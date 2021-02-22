@@ -1,14 +1,16 @@
 import React from "react";
 import "./style.css";
 
-function Navbar() {
+function Navbar(props) {
     return (
         <div>
             <nav className="navbar nav-justified">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">Titan Clicker</a>
                     <span className="navbar-text">bobobo</span>
-                    <span className="navbar-text">bingbong</span>
+                    <span className="navbar-text">
+                        Score: {props.score} \~/\~/ High Score: {props.topScore}
+                    </span>
                 </div>
             </nav>
             <header>
