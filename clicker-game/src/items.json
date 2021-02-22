@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Annie",
+        "image": "assets/images/annie.PNG"
+    },
+    {
+        "id": 2,
+        "name": "Armin",
+        "image": "assets/images/armin.PNG"
+    },
+    {
+        "id": 3,
+        "name": "Bertholdt",
+        "image": "assets/images/bertholdt.PNG"
+    },
+    {
+        "id": 4,
+        "name": "Christa",
+        "image": "assets/images/christa.PNG"
+    },
+    {
+        "id": 5,
+        "name": "Conny",
+        "image": "assets/images/conny.PNG"
+    },
+    {
+        "id": 6,
+        "name": "Eren",
+        "image": "assets/images/eren.PNG"
+    },
+    {
+        "id": 7,
+        "name": "Levi",
+        "image": "assets/images/levi.PNG"
+    },
+    {
+        "id": 8,
+        "name": "Mikasa",
+        "image": "assets/images/mikasa.PNG"
+    },
+    {
+        "id": 9,
+        "name": "Reiner",
+        "image": "assets/images/reiner.PNG"
+    },
+    {
+        "id": 10,
+        "name": "Sasha",
+        "image": "assets/images/sasha.PNG"
+    },
+    {
+        "id": 11,
+        "name": "Titan",
+        "image": "assets/images/titan.PNG"
+    },
+    {
+        "id": 12,
+        "name": "Ymir",
+        "image": "assets/images/ymir.PNG"
+    }
+]

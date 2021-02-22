@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Wrapper from "./components/Wrapper";
 import ItemCard from "./components/ItemCard";
+import Navbar from "./components/Navbar"
 import './App.css';
 import items from "./items.json";
 
@@ -11,9 +12,12 @@ class App extends Component {
 
   render() {
     return (
-      <Wrapper>
+      <div>
+        <Navbar />
+        <Wrapper>
 
-      </Wrapper>
+        </Wrapper>
+      </div>
     )
   }
 }
