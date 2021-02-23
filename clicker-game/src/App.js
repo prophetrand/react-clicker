@@ -13,11 +13,21 @@ class App extends Component {
   }
 
   shuffleChibi = () => {
-    const shuffled = this.state.items.sort(() => Math.random() - 0.1);
-    console.log(shuffled);
-    this.setState({ items: shuffled });
+
+    const array = this.state.items;
+
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    this.setState({ items: array });
   }
 
+  selectChibi = () => {
+
+  }
+
+  // Lifecycle method utilized to shuffle order of images when the App comonent is first mounted.
   componentDidMount() {
     this.shuffleChibi();
   }
@@ -28,7 +38,7 @@ class App extends Component {
         <Navbar score={this.state.score} topScore={this.state.topScore} />
         <main className="container">
           {this.state.items.map(item => (
-            <ItemCard 
+            <ItemCard
               id={item.id}
               key={item.id}
               image={item.image}
