@@ -25,7 +25,7 @@ class App extends Component {
 
   selectChibi = (id) => {
     if (this.state.clicked.indexOf(id) !== -1) {
-      // if the clicked image has an id that is in the "clicked" array, then it will have an index that DNE -1. Score and clicked array are reset as a result.
+      // if the clicked image has an id that is in the "clicked" array, then it will have an index that does not equal -1. Score and clicked array are reset as a result.
       this.setState({
         score: 0,
         clicked: [],
