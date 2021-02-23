@@ -7,7 +7,7 @@ function Navbar(props) {
             <nav className="navbar nav-justified">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="/">Titan Clicker</a>
-                    <span className="navbar-text">Click an image to begin the game!</span>
+                    <span className="navbar-text">{props.message}</span>
                     <span className="navbar-text">
                         Score: {props.score} \~/\~/ High Score: {props.topScore}
                     </span>

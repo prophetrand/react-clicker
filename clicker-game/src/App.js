@@ -9,7 +9,8 @@ class App extends Component {
     chibis: chibis,
     score: 0,
     topScore: 0,
-    clicked: []
+    clicked: [],
+    message: "Click an image to begin the game!"
   }
 
   shuffleChibi = () => {
@@ -27,14 +28,16 @@ class App extends Component {
       // if the clicked image has an id that is in the "clicked" array, then it will have an index that DNE -1. Score and clicked array are reset as a result.
       this.setState({
         score: 0,
-        clicked: []
+        clicked: [],
+        message: "Failure! But you can try again..."
       });
     } else {
       // if the clicked image conversely does not have its id in the "clicked" array, then its id is pushed into it. Then state.score increases by 1 and state.topScore increases if it has been surpassed.
       this.state.clicked.push(id);
       
       this.setState({
-        score: this.state.score + 1
+        score: this.state.score + 1,
+        message: "Success! Push forward!"
       });
 
       if (this.state.score >= this.state.topScore) {
@@ -55,7 +58,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar score={this.state.score} topScore={this.state.topScore} />
+        <Navbar score={this.state.score} topScore={this.state.topScore} message={this.state.message}/>
         <main className="container">
           {this.state.chibis.map(chibi => (
             <ItemCard
