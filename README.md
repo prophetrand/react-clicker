@@ -30,7 +30,7 @@ This web application is available on most browsers and is hosted on GitHub Pages
 Using React, from App.js I loaded the components Navbar and ItemCard and passed them props related to the stateful variables and functions defined in App.js. I equipped each image loaded through the ItemCard component with an onClick event listener, using React conventions, in order to advance the game appropriately based on whether or not the User has already clicked the target image or not.
 
 ## Code Snippets 
-The code snippet below represents the majority of the logic for the game's functionality, as well as the state object used to track values through the App component.
+The code snippet below represents the majority of the logic for the game's functionality, as well as the state object used to track values through the App component. If the clicked image has an id that is in the "clicked" array, then it will have an index that does not equal -1. Score and clicked array are reset as a result. If the clicked image conversely does not have its id in the "clicked" array, then its id is pushed into it. Then state.score increases by 1 and state.topScore increases if it has been surpassed.
 
 ```javascript
 state = {
@@ -43,14 +43,12 @@ state = {
 
 selectChibi = (id) => {
     if (this.state.clicked.indexOf(id) !== -1) {
-      // if the clicked image has an id that is in the "clicked" array, then it will have an index that does not equal -1. Score and clicked array are reset as a result.
       this.setState({
         score: 0,
         clicked: [],
         message: "Failure! But you can try again..."
       });
     } else {
-      // if the clicked image conversely does not have its id in the "clicked" array, then its id is pushed into it. Then state.score increases by 1 and state.topScore increases if it has been surpassed.
       this.state.clicked.push(id);
       
       this.setState({
@@ -66,7 +64,6 @@ selectChibi = (id) => {
     }
     this.shuffleChibi();
   }
-
 ```
 
 ## Screenshots
